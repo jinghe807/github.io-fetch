@@ -10,4 +10,4 @@ async function getDegrees(url) {
     );
 }
 
-getDegrees("./degrees.json");
+getDegrees("./education.json");
