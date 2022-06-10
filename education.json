@@ -1,8 +1,21 @@
 {
-    "collegedegrees":[
-        {"school":"University of Waterloo", "Program/Major":"Doe","Type":"BS" ,"Yearconferred": "2016"},
-        {"school":"Boston University", "Program/Major":"Software Development","Type":"MS" ,"Yearconferred": "2023"}
+    "college_degrees":[
+        {
+            "degrees":{
+                "school":"University of Waterloo",
+                "Program/Major":"Doe",
+                "Type":"BS" ,
+                "Year conferred": "2016"
+            }
+        },
+        {
+            "degrees":{
+                "school":"Boston University",
+                "Program/Major":"Software Development",
+                "Type":"MS" ,
+                "Year conferred": "2023"
+            }
+        }
 
     ]
-    }
-
+}
