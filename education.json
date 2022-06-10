@@ -3,7 +3,7 @@
 	    {
 	      "degrees": {
 	            "School": "University of Waterloo",
-	            "Program/Major": "Statistics",
+	            "Program_Major": "Statistics",
 	            "Type": "BS",
 		    "Year_conferred":"2016"
 	          }
