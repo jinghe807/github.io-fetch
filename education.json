@@ -7,6 +7,14 @@
 	            "Type": "BS",
 		    "Year_conferred":"2016"
 	          }
-	    }
+	    },
+            {
+	      "degrees": {
+	            "School": "Boston University",
+	            "Program_Major": "Software Development",
+	            "Type": "MS",
+		    "Year_conferred":"2023"
+	          }
+	    
 	  ]
 	}
