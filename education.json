@@ -1,20 +1,8 @@
 {
-   "college degrees": [
-    {
-      "school": {
-        "Program/Major": {
-          "Type": {
-            "Year conferred" : {
-            "University of Waterloo",
-            "Statistic",
-            "BS",
-            "2016"
-            }
-          }
-        }
-      }
-    }
-  ]
-}
+    "college degrees":[
+        {"school":"University of Waterloo", "Program/Major":"Doe","Type":"BS" ,"Year conferred": "2016"},
+        {"school":"Boston University", "Program/Major":"Software Development","Type":"MS" ,"Year conferred": "2023"}
 
+    ]
+    }
 
