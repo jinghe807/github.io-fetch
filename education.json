@@ -1,7 +1,15 @@
 {
-    "collegedegrees":[
-        {"school":"University of Waterloo", "Program/Major":"Doe","Type":"BS" ,"Year conferred": "2016"},
-        {"school":"Boston University", "Program/Major":"Software Development","Type":"MS" ,"Year conferred": "2023"}
-
-    ]
+  "data": [
+    {
+      "degrees": {
+        "bachelors": {
+          "data": {
+            "type": "Bachelors of Arts in French",
+            "institution": "Wellesley College",
+            "date": "1992"
+          }
+        }
+      }
     }
+  ]
+}
