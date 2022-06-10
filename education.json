@@ -1,15 +1,20 @@
 {
-  "data": [
+   "college degrees": [
     {
-      "degrees": {
-        "bachelors": {
-          "data": {
-            "type": "Bachelors of Arts in French",
-            "institution": "Wellesley College",
-            "date": "1992"
+      "school": {
+        "Program/Major": {
+          "Type": {
+            "Year conferred" : {
+            "University of Waterloo",
+            "Statistic",
+            "BS",
+            "2016"
+            }
           }
         }
       }
     }
   ]
 }
+
+
