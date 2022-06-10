@@ -6,7 +6,7 @@ async function getDegrees(url) {
 	    .then((data) => 
 		{for (var i=0;i<data.length;i++){
 	      document.write(
-	        `My first degree was a ${data.data[0].degrees.Program_Major} ${data.data[0].degrees.Type} from ${data.data[0].degrees.School} in ${data.data[0].degrees.Year_conferred}`
+	        `My first degree was a ${data.data[i].degrees.Program_Major} ${data.data[i].degrees.Type} from ${data.data[i].degrees.School} in ${data.data[i].degrees.Year_conferred}`
 	      )}
 		  });
 	}
