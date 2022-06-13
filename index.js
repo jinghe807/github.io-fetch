@@ -1,16 +1,32 @@
-async function getDegrees(url) {
-	  // fetch the url
-	  await fetch(url)
-	    //get your data here, and check for the response status. If it's not 200, throw an error
-	    .then((response) => response.json())
-	    .then((data) => 
-		{for (var i=0;i<data.data.length;i++){
-	      document.write(
-	        `I had a ${data.data[i].degrees.Program_Major} ${data.data[i].degrees.Type} from ${data.data[i].degrees.School} in ${data.data[i].degrees.Year_conferred}\n`
-	      )}
-		  });
-	}
-	
+document.addEventListener("DOMContentLoaded",getDegrees());
 
-	getDegrees("education.json");
+async function getDegrees(url) {
+	//Create a fetch request to return a promise
+	let response = await fetch(url);
+
+if (response.ok) { // if HTTP-status is 200-299
+	await fetch(url)
+
+		
+	//Resolve the promise using the Response class
+	.then((response) => response.json())
+	
+	//Process the returned JSON data using JavaScript
+	.then((data) => 
+	{for (var i=0;i<data.data.length;i++){
+	  eduTable = document.getElementById('myData');
+	  eduTable.innerHTML +=
+	  "<tr><td>" + data.data[i].degrees.Program_Major + "</td>" +
+	  "<td align='right'>" + data.data[i].degrees.Type + "</td>" +
+	  "<td align='right'>" + data.data[i].degrees.School + "</td>" +
+	  "<td align='right'>" + data.data[i].degrees.Year_conferred + "</td></tr>";}
+	});
+  
+	} else {
+  	alert("HTTP-Error: " + response.status);// alert status code of the response
+	}
+}
+
+
+  getDegrees("education.json");
 
