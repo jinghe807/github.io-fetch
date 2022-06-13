@@ -3,13 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Table</title>
     <script src="index.js" defer></script>
+    <style>
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 100%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+    </style>
   </head>
-  <body>
-    <main>
-      <div class="container">
-        <div id="card"></div>
-      </div>
+
+  <body style="color: rgb(1, 6, 17);background-color:rgb(205, 217, 242)">
+
+    <h1 style="color: rgb(0, 3, 10); text-align: center; animation-duration: 3s;animation-name: slidein;animation-iteration-count: 1;animation-direction: alternate;">My Education</h1>
+
+    <h2 style="color: rgb(0, 3, 10); text-align: center;">Degrees Table</h2>
+
+    <button onclick="myFunction()" style="background-color: #71bdf8;border-radius: 8px;align-items: center;">Click me for degrees table</button>
+
+    <script>
+      function myFunction() {
+        document.getElementById("educationtable").style.visibility="visible";
+        document.getElementById("myData").style.visibility="visible"
+        document.getElementById("tablebackground").style.visibility="visible"
+      }
+      </script>
+      
+    <main id="tablebackground" style=  "background-color:rgb(138, 157, 197);visibility:hidden"  >
+      <table id= "educationtable" style="  border: 1px solid rgb(7, 0, 0);
+      border-collapse: collapse;width:100%;text-align: center;border-style:double;visibility:hidden">
+        <thead >
+          <tr style="background-color:rgb(241, 188, 176)">
+            <th style="text-align: center;border: 1px solid rgb(7, 0, 0)">Program_Major</th>
+            <th style="text-align: center;border: 1px solid rgb(7, 0, 0)">Type</th>
+            <th style="text-align: center;border: 1px solid rgb(7, 0, 0)">School</th>
+            <th style="text-align: center;border: 1px solid rgb(7, 0, 0)">Year_conferred</th>
+          </tr>
+        </thead>
+        <tbody id="myData" style="visibility:hidden" >
+        </tbody>
+      </table>
+
+
     </main>
   </body>
 </html>
