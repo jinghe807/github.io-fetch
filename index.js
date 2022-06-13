@@ -23,7 +23,7 @@ if (response.ok) { // if HTTP-status is 200-299
 	});
   
 	} else {
-  	alert("HTTP-Error: " + response.status);// alert status code of the response
+  	console.log("HTTP-Error: " + response.status);// alert status code of the response
 	}
 }
 
